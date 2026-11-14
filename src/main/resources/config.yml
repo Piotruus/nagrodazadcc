@@ -1,0 +1,44 @@
+# ===== Baza MySQL (wspolna z botem Discord) =====
+# Dane skopiuj z panelu hostingu (Bazy danych -> Szczegoly polaczenia).
+# Te same dane wpisz w pliku .env bota.
+mysql:
+  host: "pl20.icehost.pl"
+  port: 5891
+  database: "s215417_MySQL"
+  user: "u215417_krkrsT7S0x"
+  password: "WKLEJ_NOWE_HASLO"
+
+# ===== Warunki =====
+required-minutes: 60
+
+# ===== Nagroda (komendy wykonywane z konsoli, {player} = nick) =====
+# Dostosuj do swojego pluginu od rang, np. LuckPerms:
+reward-commands:
+  - "lp user {player} parent addtemp svip 3d"
+
+link: "https://discord.gg/GyNwR5r28"
+
+gui:
+  title: "&aNagroda za discorda"
+  filler: true
+  status-yes: "&a✔"
+  status-no: "&c✘"
+  lore:
+    - ""
+    - "&7» &fOdebrana: {status}"
+    - "&7» &fNagroda: &6&lꜱᴠɪᴘ &fna &e3dni"
+    - ""
+    - "&aJak otrzymac nagrode?"
+    - " &7• &fWejdz na nasz discord &cdc.firestar.pl"
+    - " &7• &fZweryfikuj sie na odpowiednim kanale"
+    - " &7• &fNapisz swoj nick na kanale &a#nagroda"
+    - ""
+    - "&eKliknij, aby otrzymac link do Discorda!"
+
+messages:
+  link: "&aKliknij tutaj, aby wejsc na Discorda: &n{link}"
+  already-claimed-chat: "&cJuz odebrales nagrode za Discorda!"
+  need-time: "&cMusisz spędzić jeszcze {time} na serwerze!"
+  success: "&aPomyślnie odebrano nagrodę za Discorda!"
+  reset-ok: "&aZresetowano nagrode gracza {player}."
+  no-perm: "&cBrak uprawnien."
